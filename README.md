@@ -57,3 +57,14 @@ npm run dev
 ```bash
 npm run build
 ```
+
+## 과제 1. GitHub Actions를 활용한 CI/CD 환경 구축
+
+- AWS S3 배포 URL: http://mybucket-20263563.s3-website-us-east-1.amazonaws.com
+- 시연 영상 링크: https://youtu.be/k4M_fjq4014?si=dIFS_PoUvSrz7RZo
+
+---
+
+## 과제 2. AWS Amplify 서비스를 활용한 호스팅
+
+- 시연 영상 링크: https://youtu.be/UDnw6rVin7A?si=eu8_jNNIY9khboUM
