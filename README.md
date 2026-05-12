@@ -1,16 +1,59 @@
-# React + Vite
+# 스터디 모집 게시판
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+대학생들이 스터디 모집 글을 등록하고, 검색하고, 모집 상태를 관리할 수 있는 React 기반 프론트엔드 웹앱입니다.
 
-Currently, two official plugins are available:
+## 시스템 소개
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Vite와 React로 만든 단일 페이지 웹앱입니다.
+- 백엔드, DB, API 없이 브라우저에서만 동작합니다.
+- 기본 더미 데이터로 시작하며, 사용자가 변경한 데이터는 `localStorage`에 저장됩니다.
+- 저장 key는 `studyRecruitBoardData`입니다.
 
-## React Compiler
+## 기술 스택
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Vite
+- React
+- JavaScript
+- CSS
+- localStorage
 
-## Expanding the ESLint configuration
+## 주요 기능
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 스터디 목록 카드 조회
+- 스터디 등록
+- 제목, 설명, 태그 기준 실시간 검색
+- 분야별 필터
+- 모집 상태 필터
+- 신청하기 및 신청 인원 자동 증가
+- 모집 인원 도달 시 자동 마감
+- 모집 마감 / 모집 재개 상태 변경
+- 스터디 삭제
+- 전체 스터디, 모집 중, 마감, 전체 신청 인원 통계
+- 초기 데이터 복원
+- 모바일 반응형 UI
+
+## 프로젝트 구조
+
+```text
+study-recruit-board/
+├── index.html
+├── package.json
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── App.css
+    └── data.js
+```
+
+## 실행 방법
+
+```bash
+npm install
+npm run dev
+```
+
+## 빌드 확인
+
+```bash
+npm run build
+```
